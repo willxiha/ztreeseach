@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="treeGridTest">
+<head>
+    <!-- for local development -->
+    <!-- <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="../src/treeGrid.css">
+    <link rel="stylesheet" href="../src/css/demo.css" type="text/css">
+    <link rel="stylesheet" href="../src/css/zTreeStyle/zTreeStyle.css" type="text/css">
+</head>
+<body >
+<div >
+    <div class="zTreeDemoBackground left">
+        <ul class="list">
+
+            <li class="title"><input id="citySel" type="text" readonly value="" style="width:120px;"/>
+                &nbsp;<a id="menuBtn" href="#" onclick="showMenu(); return false;">选择</a></li>
+        </ul>
+    </div>
+    <div id="menuContent" class="menuContent" style="display:none; position: absolute;">
+        <input id="key" style="width: 80%" type="text" placeholder="搜索"/>
+
+        <ul id="treeDemo" class="ztree" style="margin-top:0; width:160px;"></ul>
+    </div>
+</div>
+<script src="../src/jquery.min.js"></script>
+<script src="../src/jquery.ztree.all.min.js"></script>>
+<script src="ztreedemo.js"></script>
+</body>
+</html>
